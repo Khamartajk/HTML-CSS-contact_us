@@ -30,6 +30,7 @@ body{
 
 }
 .form_container{
+    margin: 50px;
     display:grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -37,6 +38,48 @@ body{
 
 .form_control{
     display:flex;
+    flex-direction: column;
    }
 
- 
+   label{
+    margin-bottom: 5px;
+       font-size:15px;
+
+   }
+
+ .form_control1{
+   
+
+ }
+ input,textarea{
+    padding: 6px 10px;
+    border:1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+
+ }
+
+ input:focus{
+    outline-color:red;
+ }
+
+ .button_container{
+      display:flex;
+      justify-content: end;
+ }
+ button{
+    background-color:red;
+    border:transparent solid 2px;
+    padding: 5px  10px;
+    color:white;
+    border-radius: 8px;
+    transition:0.3s ease-in;
+ }
+ button:hover{
+      background-color: #ccc;
+      border: 2px solid red;
+      color:black;
+      transition:0.3s ease-out;
+      cursor: pointer;
+
+ }
