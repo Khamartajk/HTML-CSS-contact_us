@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName">
+          </div>
+          <div class="form-group">
+            <label for="websiteURL">Website URL:</label>
+            <input type="url" id="websiteURL" name="websiteURL">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject">
+          </div>
+          <div class="checkbox-table">
+              <div class="checkbox-row">
+                    <div class="checkbox-cell">
+                      <label for="webDevelopment" class="checkbox-label"><input type="checkbox" id="webDevelopment" name="services[]" value="Web Development">
+                      Web Development</label>
+                    </div>
+                    <div class="checkbox-cell">
+                      <label for="mobileAppDevelopment" class="checkbox-label"><input type="checkbox" id="mobileAppDevelopment" name="services[]" value="Mobile App Development">
+                      MobileAppDevelopment</label>
+                    </div>
+              </div>
+
+              <div class="checkbox-row">
+                      <div class="checkbox-cell">
+                        <label for="digitalMarketing" class="checkbox-label"><input type="checkbox" id="digitalMarketing" name="services[]" value="Digital Marketing">
+                        Digital Marketing</label>
+                      </div>
+                          
+                    <div class="checkbox-cell">
+                        <label for="dataAnalyticsAI" class="checkbox-label"><input type="checkbox" id="dataAnalyticsAI" name="services[]" value="Data Analytics and AI">
+                              Data Analytics and AI</label>
+                    </div>
+              </div>
+
+              <div class="checkbox-row">
+                    <div class="checkbox-cell">
+                      <label for="businessConsulting" class="checkbox-label"><input type="checkbox" id="businessConsulting" name="services[]" value="Business Consulting">
+                      Business Consulting</label>
+                    </div>
+                    <div class="checkbox-cell">
+                       <label for="productDevelopment" class="checkbox-label"><input type="checkbox" id="productDevelopment" name="services[]" value="Product Development">
+                        Product Development</label>
+                    </div>
+              </div>
+          </div>
+
+          <div>
+            <label>
+              <input type="checkbox" />Product Development
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+          </div>
+          <div class="captcha-container">
+            <input type="text" id="captcha" name="captcha" class="captcha-input" placeholder="Enter the captcha">
+            <!-- Replace the image source with your captcha image source -->
+            <img src="captcha-image.jpg" alt="Captcha" class="captcha-image">
+          </div>
+          <div class="form-group-submit">
+            <button type="submit" class="submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
+      
+</body>
+</html>
